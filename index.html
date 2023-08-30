@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astronomy Picture of the Day</title>
+    <style>
+      body {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        background-color: rgb(195, 206, 206);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        box-shadow: 0px 0px 15px 13px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        width: 50%;
+        height: 90%;
+        background-color: aliceblue;
+      }
+      .box {
+        padding: 10px;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .description {
+        overflow-y: scroll;
+      }
+      h2{
+        text-align: center;
+        margin-bottom: 0%;
+      }
+      @media only screen and (max-width: 900px) {
+        .wrapper {
+            width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2> Astronomy Picture of the Day</h2>
+    <div class="container">
+      <div class="wrapper">
+        <div class="image box">
+         
+        </div>
+        <div class="title box">
+          <span><b>Title:</b>
+            <p class="img-title"></p></span>
+        </div>
+        <span class="box"><b>Explanation: </b></span>
+        <div class="description box">
+          <p class="explanation">
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
