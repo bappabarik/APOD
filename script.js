@@ -10,9 +10,14 @@ xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {
         if (xhr.status === 200) {
             const data = JSON.parse(this.responseText)
-            image.innerHTML = `<img
-            src="${data.hdurl}"
-            alt=""/>`
+            if(data.media_type === 'video'){
+                image.innerHTML = `<iframe width="475" height="315"
+                src="${data.url}">`
+            } else{
+                image.innerHTML = `<img
+                src="${data.url}"
+                alt=""/>`
+            }
             title.innerHTML = `${data.title}`
             explanation.innerHTML = `${data.explanation}`
         } else {
