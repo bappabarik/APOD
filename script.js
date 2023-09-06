@@ -11,8 +11,7 @@ xhr.onreadystatechange = function () {
         if (xhr.status === 200) {
             const data = JSON.parse(this.responseText)
             if(data.media_type === 'video'){
-                image.innerHTML = `<iframe width="475" height="315"
-                src="${data.url}">`
+                image.innerHTML = `<iframe src="${data.url}">`
             } else{
                 image.innerHTML = `<img
                 src="${data.url}"
