@@ -18,7 +18,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        /* height: 100vh; */
       }
       .wrapper {
         display: flex;
@@ -31,24 +31,30 @@
         background-color: aliceblue;
       }
       .box {
-        padding: 10px;
+        /* height: 24rem; */
+        padding: 7px;
         display: flex;
         align-items: center;
       }
+      .p-1{
+        padding-left: 7px;
+      }
       img {
-        height: 100%;
+        height: 30rem;
         width: 100%;
         object-fit: cover;
       }
-      .description {
-        overflow-y: scroll;
+      /* .description {
         height: 80px;
-        padding: 10px;
-      }
+      } */
       h2{
         text-align: center;
         margin: 20px;
         /* padding: 10px; */
+      }
+      .explanation{
+        overflow-y: scroll;
+        height: 100px;
       }
       iframe{
         width: 100%;
@@ -84,8 +90,8 @@
           <span><b>Title:</b>
             <p class="img-title"></p></span>
         </div>
-        <span class="box"><b>Explanation: </b></span>
-        <div class="description box">
+        <span class="p-1"><b>Explanation: </b></span>
+        <div class="description p-1">
           <p class="explanation">
           </p>
         </div>
